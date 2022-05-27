@@ -16,8 +16,8 @@ int SmallNumber(std::array<int, N> array) {
     int smallNumber = array[1];
     int maxi = 0;
 
-    for (int counter = 0; counter < array.size(); counter++) {
-        maxi = array[counter];
+    for (int counter : array) {
+        maxi = counter;
         if (smallNumber > maxi) {
             smallNumber = maxi;
         }
